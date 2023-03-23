@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-calculadora {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.container-calculadora input {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px
+}
+
+.layout li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  text-align: center;
+  list-style: none;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  font-weight: bolder
+}
