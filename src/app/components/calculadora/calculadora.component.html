@@ -1,32 +1,25 @@
 <div class="container-calculadora">
-  <input type="text">
-  <div class="buttons">
-    <ul class="layout">
-      <li>7</li>
-      <li>8</li>
-      <li>9</li>
-      <li>+</li>
-      <li>4</li>
-      <li>5</li>
-      <li>6</li>
-      <li>-</li>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>*</li>
-      <li>+/-</li>
-      <li>0</li>
-      <li>,</li>
-      <li>/</li>
-    </ul>
+  
+  <div class="imagem-animation">
+    <img src="./assets/operacoes.png" alt="assda">
   </div>
-</div>
-<div>
-  <form>
-
-  <input type="number" name="num1" [(ngModel)]="num1" id="">
-  <input type="number" name="num1" [(ngModel)]="num2" id="">
-  <BUtton (click)="somar()">SOMAR</BUtton>
-  <input [value]="soma">
-</form>
+  
+  <div class="calculadora">
+    <p class="error">{{error}}</p>
+    <div class="result">
+      <p>{{calculo}}</p>
+    </div>
+    <input type="number" [(ngModel)]="num1">
+    <input type="number" [(ngModel)]="num2">
+    <div class="buttons">
+      <button (click)="somar()">+</button>
+      <button (click)="subtrair()">-</button>
+      <button (click)="multiplicar()">*</button>
+      <button (click)="dividir()">/</button>
+      <button (click)="limpar()">C</button>
+    </div>
+    
+  </div>
+  
+ 
 </div>
